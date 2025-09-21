@@ -1,0 +1,12 @@
+pandas
+numpy
+glob
+matplotlib
+scikit-learn
+smtplib
+beautifulsoup4
+time
+datetime
+selenium
+webdriver-manager
+requests
