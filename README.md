@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Tunisia Real Estate Data Analysis
 
 A comprehensive data scraping and analysis project for Tunisian real estate market, focusing on apartment listings from Mubawab.tn.
@@ -254,3 +255,6 @@ For questions, suggestions, or collaboration opportunities, please open an issue
 ---
 
 **Note**: This project demonstrates data engineering and analysis techniques for real estate market research. The scraped data should be used responsibly and in accordance with applicable laws and website policies.
+=======
+# Real_Estate_Tunisia
+>>>>>>> 6e20d60c5cfd86fe7bffa2d658815b670ffb83a8
