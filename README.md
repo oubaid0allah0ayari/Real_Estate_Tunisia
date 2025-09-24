@@ -1,7 +1,6 @@
-<<<<<<< HEAD
-# Tunisia Real Estate Data Analysis
+# Tunisia Real Estate Data Scraping
 
-A comprehensive data scraping and analysis project for Tunisian real estate market, focusing on apartment listings from Mubawab.tn.
+A data scraping project for Tunisian real estate market, focusing on apartment listings from Mubawab.tn. This project creates a structured dataset that can be used for real estate price prediction and market analysis.
 
 ## 📋 Table of Contents
 
@@ -17,23 +16,23 @@ A comprehensive data scraping and analysis project for Tunisian real estate mark
 
 ## 🏠 Overview
 
-This project scrapes, cleans, and analyzes real estate data from Tunisian property websites, primarily focusing on apartment listings. The pipeline extracts detailed property information including prices, locations, features, and specifications to create a structured dataset for analysis.
+This project scrapes apartment listings from Mubawab.tn (a major Tunisian real estate website) and processes the data into a clean, structured format suitable for machine learning and price prediction models.
 
 ### Key Objectives
 
 - Scrape apartment listings from Mubawab.tn
-- Clean and structure the raw data for analysis
-- Provide insights into the Tunisian real estate market
-- Create a reusable data pipeline for ongoing market monitoring
+- Extract and structure property information (prices, locations, features, specifications)
+- Create a clean dataset for real estate price prediction projects
+- Provide a foundation for Tunisian real estate market analysis
 
 ## ✨ Features
 
 - **Web Scraping**: Automated data extraction from Mubawab.tn using requests and BeautifulSoup
-- **Data Cleaning**: Comprehensive preprocessing pipeline to handle inconsistent data formats
-- **Feature Extraction**: Parse complex property details into structured columns
+- **Data Preprocessing**: Comprehensive pipeline to transform raw scraped data into structured format
+- **Feature Extraction**: Parse complex property details into organized columns
 - **Location Processing**: Clean and separate location hierarchies (region, city, neighborhood)
-- **Price Analysis**: Handle various price formats and currency notations
-- **Export Options**: Clean datasets exported in CSV format for further analysis
+- **Property Details Parsing**: Extract amenities, specifications, and features from text
+- **Export Ready**: Clean datasets in CSV format ready for machine learning models
 
 ## 📁 Project Structure
 
@@ -42,8 +41,8 @@ real_estate_tunisia/
 ├── README.md                          # Project documentation
 ├── requirements.txt                   # Python dependencies
 ├── thoughts.txt                       # Project notes and future plans
-├── data.ipynb                        # Main analysis notebook
-├── datacleaning.ipynb                # Data cleaning pipeline
+├── data.ipynb                        # Data analysis notebook (future work)
+├── datacleaning.ipynb                # Data preprocessing pipeline
 ├── scraping_scripts/
 │   ├── mubawaba_scraper.ipynb        # Web scraping implementation
 │   └── apartments.csv                # Raw scraped data
@@ -72,8 +71,8 @@ real_estate_tunisia/
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/yourusername/real_estate_tunisia.git
-   cd real_estate_tunisia
+   git clone https://github.com/oubaid0allah0ayari/Real_Estate_Tunisia.git
+   cd Real_Estate_Tunisia
    ```
 
 2. **Install dependencies**
@@ -109,32 +108,37 @@ The scraper will:
 - Extract property details, prices, locations, and features
 - Save raw data to CSV format
 
-### 2. Data Cleaning
+### 2. Data Preprocessing
 
 Process the raw scraped data:
 
 ```python
 # Open datacleaning.ipynb
-# Run the complete data cleaning pipeline
+# Run the complete data preprocessing pipeline
 ```
 
-The cleaning process includes:
+The preprocessing includes:
 
-- Removing unwanted text and formatting
-- Splitting location data into hierarchical columns
-- Parsing property features and details
-- Standardizing price formats
-- Handling missing values
+- Cleaning location data and removing unwanted text
+- Splitting location data into hierarchical columns (region, city, neighborhood)
+- Parsing property features from complex text strings
+- Extracting property details (amenities, specifications) into separate columns
+- Structuring data for machine learning applications
 
-### 3. Data Analysis
+### 3. Use the Dataset
 
-Analyze the cleaned dataset:
+Load the cleaned dataset for your price prediction models:
 
 ```python
-# Open data.ipynb for analysis examples
-# Load the cleaned dataset
+# Load the structured dataset
 import pandas as pd
 df = pd.read_csv('Data/cleaned_data.csv')
+
+# Dataset is ready for:
+# - Price prediction models
+# - Market analysis
+# - Feature engineering
+# - Machine learning applications
 ```
 
 ## 📊 Data Pipeline
@@ -145,18 +149,18 @@ df = pd.read_csv('Data/cleaned_data.csv')
 - **Method**: Requests + BeautifulSoup
 - **Output**: Raw scraped data with basic structure
 
-### Stage 2: Data Cleaning
+### Stage 2: Data Preprocessing
 
-- **Location Processing**: Split hierarchical location data
-- **Feature Extraction**: Parse property details into columns
-- **Price Standardization**: Clean currency and numeric formats
-- **Data Validation**: Handle missing and inconsistent values
+- **Location Processing**: Split hierarchical location data into separate columns
+- **Feature Extraction**: Parse property details from complex text strings
+- **Data Structuring**: Transform unstructured data into organized columns
+- **Property Details**: Extract amenities, specifications, and features
 
-### Stage 3: Feature Engineering
+### Stage 3: Dataset Export
 
-- **Property Attributes**: Extract room counts, surface areas, amenities
-- **Location Hierarchy**: Separate city, neighborhood, and district information
-- **Categorical Variables**: Standardize property types and conditions
+- **Property Attributes**: Room counts, surface areas, amenities as structured features
+- **Location Hierarchy**: Separate columns for region, city, and neighborhood
+- **Ready for ML**: Clean dataset suitable for price prediction models
 
 ## 📈 Dataset Description
 
@@ -194,18 +198,18 @@ df = pd.read_csv('Data/cleaned_data.csv')
 
 As noted in `thoughts.txt`, planned expansions include:
 
-- **Additional Sources**:
+- **Additional Data Sources**:
   - Tayara.tn integration
   - Menzili.tn scraping
   - Facebook Marketplace data
-- **Advanced Analytics**:
-  - Price prediction models
+- **Machine Learning Applications**:
+  - Real estate price prediction models
   - Market trend analysis
-  - Geographic price mapping
-- **Automation**:
-  - Scheduled data updates
-  - Real-time monitoring
-  - Alert systems for price changes
+  - Property value estimation
+- **Data Pipeline Improvements**:
+  - Automated data collection
+  - Real-time data updates
+  - Enhanced data validation
 
 ## 🤝 Contributing
 
@@ -254,7 +258,4 @@ For questions, suggestions, or collaboration opportunities, please open an issue
 
 ---
 
-**Note**: This project demonstrates data engineering and analysis techniques for real estate market research. The scraped data should be used responsibly and in accordance with applicable laws and website policies.
-=======
-# Real_Estate_Tunisia
->>>>>>> 6e20d60c5cfd86fe7bffa2d658815b670ffb83a8
+**Note**: This project creates a foundation dataset for real estate price prediction and market analysis. The scraped data should be used responsibly and in accordance with applicable laws and website policies.
