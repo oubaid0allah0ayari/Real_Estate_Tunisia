@@ -2,17 +2,18 @@
 
 A data scraping project for Tunisian real estate market, focusing on apartment listings from Mubawab.tn. This project creates a structured dataset that can be used for real estate price prediction and market analysis.
 
+
 ## 📋 Table of Contents
 
-- [Overview](##overview)
-- [Features](#features)
-- [Project Structure](#project-structure)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Data Pipeline](#data-pipeline)
-- [Dataset Description](#dataset-description)
-- [Contributing](#contributing)
-- [License](#license)
+- [Overview](#-overview)
+- [Features](#-features)
+- [Project Structure](#-project-structure)
+- [Installation](#-installation)
+- [Usage](#-usage)
+- [Data Pipeline](#-data-pipeline)
+- [Dataset Description](#-dataset-description)
+- [Contributing](#-contributing)
+- [License](#-license)
 
 ## 🏠 Overview
 
