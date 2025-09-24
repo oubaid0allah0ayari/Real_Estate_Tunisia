@@ -41,23 +41,15 @@ This project scrapes apartment listings from Mubawab.tn (a major Tunisian real e
 real_estate_tunisia/
 ├── README.md                          # Project documentation
 ├── requirements.txt                   # Python dependencies
-├── thoughts.txt                       # Project notes and future plans
 ├── data.ipynb                        # Data analysis notebook (future work)
-├── datacleaning.ipynb                # Data preprocessing pipeline
+├── data_cleaning.ipynb                # Data preprocessing pipeline
 ├── scraping_scripts/
 │   ├── mubawaba_scraper.ipynb        # Web scraping implementation
 │   └── apartments.csv                # Raw scraped data
 └── Data/
     ├── rawdata.csv                   # Initial scraped dataset
     ├── processed_data.csv            # Intermediate processing stage
-    ├── cleaned_data.csv              # Final cleaned dataset
-    ├── dataSetFull.csv              # Complete dataset
-    ├── data_prices_cleaned.csv       # Price-focused dataset
-    ├── menzili_preprocessed.csv      # Menzili.tn data (planned)
-    ├── mubawab_preprocessed.csv      # Mubawab.tn processed data
-    ├── tayara_preprocessed.csv       # Tayara.tn data (planned)
-    ├── tunisia-real-estate-data.csv  # Consolidated dataset
-    └── tunisia-real-estate.csv       # Alternative format
+    └── cleaned_data.csv              # Final cleaned dataset
 ```
 
 ## 🛠 Installation
