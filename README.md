@@ -41,7 +41,6 @@ This project scrapes apartment listings from Mubawab.tn (a major Tunisian real e
 real_estate_tunisia/
 ├── README.md                          # Project documentation
 ├── requirements.txt                   # Python dependencies
-├── data.ipynb                        # Data analysis notebook (future work)
 ├── data_cleaning.ipynb                # Data preprocessing pipeline
 ├── scraping_scripts/
 │   ├── mubawaba_scraper.ipynb        # Web scraping implementation
